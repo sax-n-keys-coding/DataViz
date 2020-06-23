@@ -15,6 +15,7 @@
 		<meta name="google-signin-client_id" content="606290244318-1o45jvdnv5kqn9bfhvbpm0b92bjejrdg.apps.googleusercontent.com">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 	</head>
+	<body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <a class="navbar-brand" href="#"> 
 	    <img src = "https://github.com/sax-n-keys-coding/DataViz/blob/master/DataViz.png?raw=true" height= "60em", width="100em">
@@ -23,7 +24,7 @@
 	    	<div class="g-signin2" data-onsuccess="onSignIn" style=“display: inline-block”></div>
 	    </ul>
 	    <button href="#" onclick="signOut();" style="">Sign out</button>
-	    <script>
+	    <!--<script>
 	      function signOut() {
 	      	/**alert("You have been signed out, have a great day, " + profile.getName() + "!"); <--Not working. */
 	        var auth2 = gapi.auth2.getAuthInstance();
@@ -31,17 +32,14 @@
 	          console.log('User signed out.');
 	        });
 	      }
-	    </script>
+	    </script>-->
 	  </a>
 	</nav>
-
-
-	<body>
-	  <script>console.log("hello");</script>
+	   <script src="index.js"></script> 
 	</body>
 
 
-	<script>
+	<!--<script>
 	  	function onSignIn(googleUser) {
 	  	  var profile = googleUser.getBasicProfile();
 	  	  alert("Hello, " + profile.getName() + "!");
@@ -49,6 +47,6 @@
 	  	  console.log('Name: ' + profile.getName());
 	  	  console.log('Image URL: ' + profile.getImageUrl());
 	  	  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-	  	}
+	  	}-->
   </script>
 </html>
